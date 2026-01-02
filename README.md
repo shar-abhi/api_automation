@@ -1,6 +1,6 @@
-# API_AUTO_PRAC Repo
+# API Automation Repo
 
-A repository for practising API automation using
+A repository for API automation using
 - REST ASSURED
 - JAVA
 - MAVEN

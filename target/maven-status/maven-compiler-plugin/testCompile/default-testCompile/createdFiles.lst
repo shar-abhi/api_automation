@@ -1,1 +1,5 @@
+com/api/test/BookingAPITest.class
 com/api/test/LoginAPITest.class
+com/api/pages/AuthService.class
+com/api/pages/BookingService.class
+com/api/pages/BaseService.class

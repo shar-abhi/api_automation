@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.api.test.LoginAPITest" time="6.074" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="12.613" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="/Users/abhi/Library/Java/JavaVirtualMachines/openjdk-25.0.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/abhi/automation/api_auto_prac/target/surefire/surefirebooter-20251228181842964_3.jar /Users/abhi/automation/api_auto_prac/target/surefire 2025-12-28T18-18-42_738-jvmRun1 surefire-20251228181842964_1tmp surefire_0-20251228181842964_2tmp"/>
+    <property name="sun.java.command" value="/Users/abhi/automation/api_auto_prac/target/surefire/surefirebooter-20260104173909879_3.jar /Users/abhi/automation/api_auto_prac/target/surefire 2026-01-04T17-39-09_533-jvmRun1 surefire-20260104173909879_1tmp surefire_0-20260104173909879_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/abhi/automation/api_auto_prac/target/test-classes:/Users/abhi/automation/api_auto_prac/target/classes:/Users/abhi/.m2/repository/io/rest-assured/rest-assured/5.5.6/rest-assured-5.5.6.jar:/Users/abhi/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/abhi/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/abhi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/abhi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/abhi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/abhi/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/abhi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/abhi/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/abhi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/abhi/.m2/repository/io/rest-assured/json-path/5.5.6/json-path-5.5.6.jar:/Users/abhi/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/abhi/.m2/repository/io/rest-assured/rest-assured-common/5.5.6/rest-assured-common-5.5.6.jar:/Users/abhi/.m2/repository/io/rest-assured/xml-path/5.5.6/xml-path-5.5.6.jar:/Users/abhi/.m2/repository/org/apache/commons/commons-lang3/3.18.0/commons-lang3-3.18.0.jar:/Users/abhi/.m2/repository/org/testng/testng/6.10/testng-6.10.jar:/Users/abhi/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/abhi/automation/api_auto_prac/target/surefire/surefirebooter-20251228181842964_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/abhi/automation/api_auto_prac/target/surefire/surefirebooter-20260104173909879_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.1+8-27"/>
     <property name="user.name" value="abhi"/>
@@ -56,9 +56,26 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="loginTest" classname="com.api.test.LoginAPITest" time="5.458">
+  <testcase name="getAllBookingIdTest" classname="com.api.test.BookingAPITest" time="6.022">
+    <system-out><![CDATA[Total number of entries fetched: 2758
+]]></system-out>
+  </testcase>
+  <testcase name="getBookingIdTest" classname="com.api.test.BookingAPITest" time="2.767">
     <system-out><![CDATA[{
-    "token": "76532e18f24f60a"
+    "firstname": "Susan",
+    "lastname": "Jackson",
+    "totalprice": 482,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2021-01-21",
+        "checkout": "2022-08-14"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="loginTest" classname="com.api.test.LoginAPITest" time="2.16">
+    <system-out><![CDATA[{
+    "token": "72fb4dae05d2e39"
 }
 ]]></system-out>
   </testcase>
